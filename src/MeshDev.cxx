@@ -67,7 +67,7 @@ static const string error_string [] =
 static string mafn;
 static string mbfn;
 static string ofn;
-static FileFormat of = VRML_1_FILE; // Output file format
+static FileFormat of = VRML_2_FILE; // Output file format
 static Mesh* ma = 0;
 static Mesh* mb = 0;
 // Compute successed

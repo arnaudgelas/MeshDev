@@ -114,7 +114,7 @@ class Mesh
 		bool ReadFile( const std::string& file_name );
         
 		// Write mesh in a file
-		bool WriteFile( const std::string& file_name, const FileFormat& file_format=VRML_1_FILE ) const;
+		bool WriteFile( const std::string& file_name, const FileFormat& file_format=VRML_2_FILE ) const;
         
 		//--
 		//
