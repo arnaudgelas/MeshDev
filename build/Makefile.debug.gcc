@@ -1,0 +1,41 @@
+# Project: MeshDev
+# Makefile created by Michaël Roy
+
+CXX  = g++
+OBJ  = tmp/Deviation.o tmp/FileVrml1.o tmp/FileVrml2.o tmp/Mesh.o tmp/MeshDev.o tmp/Neighborhood.o tmp/Sample.o tmp/UniformGrid.o
+BIN  = ../bin/meshdev
+CFLAGS =  -DNDEBUG -Wall -W -ansi -pedantic -g
+
+.PHONY: all clean
+
+all: $(BIN)
+
+clean:
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CXX) $(OBJ) -o $(BIN) $(CFLAGS)
+
+tmp/Deviation.o: ../src/Deviation.cxx
+	$(CXX) -c ../src/Deviation.cxx -o tmp/Deviation.o $(CFLAGS)
+
+tmp/FileVrml1.o: ../src/FileVrml1.cpp
+	$(CXX) -c ../src/FileVrml1.cpp -o tmp/FileVrml1.o $(CFLAGS)
+
+tmp/FileVrml2.o: ../src/FileVrml2.cpp
+	$(CXX) -c ../src/FileVrml2.cpp -o tmp/FileVrml2.o $(CFLAGS)
+
+tmp/Mesh.o: ../src/Mesh.cpp
+	$(CXX) -c ../src/Mesh.cpp -o tmp/Mesh.o $(CFLAGS)
+
+tmp/MeshDev.o: ../src/MeshDev.cxx 
+	$(CXX) -c ../src/MeshDev.cxx -o tmp/MeshDev.o $(CFLAGS)
+
+tmp/Neighborhood.o: ../src/Neighborhood.cxx 
+	$(CXX) -c ../src/Neighborhood.cxx -o tmp/Neighborhood.o $(CFLAGS)
+
+tmp/Sample.o: ../src/Sample.cxx ../src/Sample.h ../src/MeshDev.h
+	$(CXX) -c ../src/Sample.cxx -o tmp/Sample.o $(CFLAGS)
+
+tmp/UniformGrid.o: ../src/UniformGrid.cxx 
+	$(CXX) -c ../src/UniformGrid.cxx -o tmp/UniformGrid.o $(CFLAGS)

@@ -1,0 +1,78 @@
+              MeshDev
+     Mesh Comparison Software
+Copyright (C) 2002-2003 Michaël Roy
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Version 0.5
+~~~~~~~~~~~~~~~~~~~~~~~~~~2003/--/--
+
+MeshDev is now ISO/ANSI C++ compliant.
+
+# Add RMS value in deviation statistic output
+# Add VRML 2.0 file support
+
+# New Stopwatch implementation
+
+# Remove STL file support
+# Remove SMF file support
+
+Only VRML 1.0/2.0 files are supported now.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Version 0.4
+~~~~~~~~~~~~~~~~~~~~~~~~~~2002/11/29
+
+# Add VRML 1.0 and IV file read support
+# Add STL file read/write support
+# Add deviation bound option
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Version 0.3
+~~~~~~~~~~~~~~~~~~~~~~~~~~2002/03/17
+
+Totally rewrite source code
+No more Open Inventor library usage
+Now use C++ Standard Library
+All computation are done in
+double precision float
+
+-> More Accurate
+-> Code simpler and more readable
+-> Generic deviation deviation
+  
+# Add SMF file read/write support
+# Add VRML 1.0 file write support
+# Add IV file write support
+
+# Fix help message
+
+# Delete log file support
+  Results are now print in the console
+# Delete histogram file support (coming back later)
+# Delete mean absolute deviation value output
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Version 0.2
+~~~~~~~~~~~~~~~~~~~~~~~~~~2002/01/28
+
+# Add Linux support against
+  Sgi Open Inventor Library
+
+# Fix bounding box
+# Fix vertex normal
+# Fix attribute maximum distance
+
+# Update help message
+
+# Delete unused source files
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Version 0.1
+~~~~~~~~~~~~~~~~~~~~~~~~~~2002/01/16
+
+First release
