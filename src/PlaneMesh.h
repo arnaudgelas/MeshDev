@@ -74,7 +74,8 @@ class PlaneMesh : public Mesh
         //
 		void ComputeFacePlanes();
 		
-        
+    void ClearAll();
+
 	//
 	// Member Data
 	//
